@@ -1,0 +1,39 @@
+package com.esiee.tp2.servlet;
+
+import java.io.IOException;
+
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+
+public class AuthentificationServlet {
+	private static final String USERNAME_PARAM = "username";
+	private static final String PASSWORD_PARAM = "password";
+	private static final String MISSING_USERNAME = "Username missing!";
+	private static final String MISSING_PASSWORD = "Password missing!";
+	private static final String ERROR_AUTH = "Authentification error!";
+	
+    protected void doPost(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
+    	String username = request.getParameter(USERNAME_PARAM);
+    	String password = request.getParameter(PASSWORD_PARAM);
+    	
+    	if (username.isBlank()) {
+    		
+    	}
+    	
+    	if (password.isBlank()) {
+    		
+    	}
+    	
+    	if () {
+    		
+    	}
+    	
+    	
+    	
+    	// string.format
+    	//use send redirect de response si erreur
+	}
+}
+}

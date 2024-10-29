@@ -1,0 +1,7 @@
+package com.esiee.tp2.domain;
+
+public class Civility {
+	private Long id;
+	private String code;
+	private String label;
+}

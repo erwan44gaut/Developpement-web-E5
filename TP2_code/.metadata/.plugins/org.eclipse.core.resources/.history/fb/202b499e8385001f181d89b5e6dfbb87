@@ -1,0 +1,18 @@
+package com.esiee.tp2.domain;
+
+public class Datamodel {
+	
+	private static Datamodel datamodelInstance;
+	
+	public static Datamodel getInstance() {
+		if (datamodelInstance == null) {
+			datamodelInstance = new Datamodel();
+		}
+		
+		return datamodelInstance;
+	}
+	
+	private Datamodel() {
+		
+	}
+}

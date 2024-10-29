@@ -1,0 +1,5 @@
+package com.esiee.tp2.domain;
+
+public class Person {
+
+}

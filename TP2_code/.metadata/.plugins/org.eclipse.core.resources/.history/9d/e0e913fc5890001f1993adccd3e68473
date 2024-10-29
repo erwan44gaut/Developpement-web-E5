@@ -1,0 +1,48 @@
+package com.esiee.tp2.servlet;
+
+import java.io.IOException;
+
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+public class AuthentificationServlet {
+	private static final String USERNAME_PARAM = "username";
+	private static final String PASSWORD_PARAM = "password";
+	
+	private static final String MISSING_USERNAME = "Username missing!";
+	private static final String MISSING_PASSWORD = "Password missing!";
+	private static final String ERROR_AUTH = "Authentification error!";
+	
+	private static final String PAGE_REDIRECTION_VALID = "home.jsp";
+	
+    protected void doPost(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
+    	HttpServletRequest httpRequest = (HttpServletRequest) request;
+        HttpServletResponse httpResponse = (HttpServletResponse) response;
+        
+    	String username = request.getParameter(USERNAME_PARAM);
+    	String password = request.getParameter(PASSWORD_PARAM);
+    	
+    	if (username.isBlank()) {
+    		
+    	}
+    	
+    	if (password.isBlank()) {
+    		
+    	}
+    	
+    	// si le username n'existe pas
+
+    	
+    	// si le password est faux
+
+    	
+    	HttpSession session = httpRequest.getSession();
+        session.setAttribute(USERNAME_PARAM, username);
+        httpResponse.sendRedirect(PAGE_REDIRECTION_VALID);
+	}
+}

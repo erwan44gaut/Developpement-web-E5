@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+/Users/erwan/Library/CloudStorage/GoogleDrive-erwan.gautier@edu.esiee.fr/My Drive/3ème année/Back-end/TP2/TP2_code/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3374037627.index
+/tp2/src/main/resources
+/Users/erwan/Library/CloudStorage/GoogleDrive-erwan.gautier@edu.esiee.fr/My Drive/3ème année/Back-end/TP2/TP2_code/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1433948031.index
+/jwt/src/main/java
